@@ -1,11 +1,10 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { RequestForm } from './features/request-form/request-form';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [RequestForm],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
-export class App {
-  protected readonly title = signal('request-manager');
-}
+export class App {}
