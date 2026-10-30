@@ -104,7 +104,7 @@ export class RequestForm {
 
     this.form.markAllAsTouched();
 
-    if (this.form.invalid) {
+    if (this.form.invalid || this.form.pending) {
       return;
     }
 
